@@ -98,7 +98,7 @@ function fuctGame() {
     name[i].style.border = "1px solid black";
     name[i].style.borderRadius = "7px";
     name[i].style.margin = "2px 2px";
-    name[i].style.color = "green";
+    name[i].style.color = "rgb(22, 221, 22)";
     name[i].style.padding = "10px";
     name[i].style.backgroundColor = "black";
     name[i].textContent = myArr[i];
@@ -189,6 +189,7 @@ function fuctGame() {
       var na = document.createElement("div");
       var na1 = document.createElement("div");
       var na2 = document.createElement("div");
+      na2.setAttribute("class", "restartbutton")
       bas1.appendChild(na);
       bas1.appendChild(na1);
       bas1.appendChild(na2);
@@ -196,21 +197,21 @@ function fuctGame() {
       bas1.style.display = "inline";
       na.textContent = "Your Time is";
       na.style.position = "relative";
-      na.style.top = "30px";
+    
       na1.textContent = time.innerHTML;
       na1.style.position = "relative";
-      na1.style.top = "30px";
-      na2.textContent = "restart";
-      na.style.fontSize = "75px";
+      
+      na2.textContent = "Restart";
+      na.style.fontSize = "40px";
       na.style.color = "rgb(401,399,399)";
       na.style.position = "relative";
-      na1.style.fontSize = "85px";
-      na1.style.color = "rgb(401,399,399)";
+      na1.style.fontSize = "40px";
+      na1.style.color = "rgb(22, 221, 22)";
       na1.style.position = "relative";
-      na2.style.fontSize = "85px";
-      na2.style.color = "green";
-      na2.style.position = "relative";
-      na2.style.top = "40px";
+      // na2.style.fontSize = "40px";
+      // na2.style.color = "green";
+      // na2.style.position = "relative";
+      // na2.style.top = "40px";
 
       console.log(localStorage);
       na2.addEventListener("click", myFunction);
